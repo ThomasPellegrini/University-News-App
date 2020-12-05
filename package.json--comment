@@ -1,0 +1,37 @@
+{
+  "name": "AppUniB",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "clear_cache" : "watchman watch-del-all"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0", // chiamata verso l'endpoint
+    "native-base": "^2.8.1", // temizzazione
+    "react": "16.6.1",
+    "react-native": "0.57.7",
+    "react-native-navigation": "^2.2.0", // implementa la navigazone
+    "react-native-render-html": "^3.10.0", // HTML renderizza l'html
+    "react-native-xml2js": "^1.0.3", // test
+    "react-navigation": "^1.5.7", // dipendenza di react-native-nagigation
+    "react-redux": "^6.0.0",
+    "react-xml-parser": "^1.0.8", // test
+    "redux": "^4.0.1", // dipendenza
+    "redux-axios-middleware": "^4.0.0", // dipendenza di axios
+    "redux-thunk": "^2.3.0", // thunk
+    "unescape": "^1.0.1", // sostituzione dei caratteri speciali eg. &
+    "xmldom": "^0.1.27" // parser xml
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0", // compilatore, compila js ES6 in versone js vanilla
+    "jest": "23.6.0", // test javascript
+    "metro-react-native-babel-preset": "0.50.0", // metro bundler
+    "react-test-renderer": "16.6.1"
+  },
+  "jest": {
+    "preset": "react-native" // cosa mi serve prima di jest
+  }
+}
